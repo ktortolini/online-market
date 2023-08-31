@@ -33,3 +33,10 @@ module.exports = {
 	Category,
 	ProductTag,
 };
+
+// source schema file
+// run the seeds
+// npm start
+// insomnia
+// run through insomnia, and show everything including get all to verify it works
+// make sure walkthrough video is in the readme and submit link to it on bcs
