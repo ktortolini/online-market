@@ -9,7 +9,11 @@
 ## _Description_
 
 This repository has a web application that uses
-[Node.js](https://nodejs.org/en) along with the `express` and `sequelize` packages in order to provide an ecommerce back-end for the client. It has multiple valid JS (ES6) files and SQL files; the `server.js` file contains the `sync()` method from sequelize for running the application, and the `schema.sql` file contains the setup for the SQL database.
+[Node.js](https://nodejs.org/en) along with the `express` and `sequelize` packages in order to provide an e-commerce back-end for the client. It has multiple valid JS (ES6) files and SQL files; the `server.js` file contains the `sync()` method from sequelize for running the application, and the `schema.sql` file contains the setup for the SQL database.
+
+- [Node.js](https://www.w3schools.com/nodejs/nodejs_filesystem.asp) Native File System Module `fs`, used to work with the file system on a computer in order to read files, create files, update files, delete files, and rename files.
+- [Node.js](https://www.npmjs.com/package/sequelize) External Command Line Interface Module `sequelize`, used to connect to the database, close the connection, test if the connection works, all while logging to the console every SQL query it performs.
+
 
 ## _Table of Contents_
 
@@ -51,9 +55,42 @@ npm run watch
 
 The client will be presented with a notification that the port has been opened indicating that the application has started and is running.
 
-![MainScreenshot]()
+![MainScreenshot](./readme_assets/nodejsapp.gif)
 
-The back-end connections were a joy to make, but it was also very time intensive. Any client would be able to use this enjoyable back-end and exciting application for their e-commerce needs.
+To organize the store-front there are various classes that exist like `Category`, `Product`, `ProductTag`, and `Tag` for storing the merchandise. For example, the `Category` model was written in `JS`, according to the provided instructions, with the following code snippet:
+
+```js
+// defines the 'id' and 'category_name' columns
+id: {
+	type: DataTypes.INTEGER,
+	allowNull: false,
+	primaryKey: true,
+	autoIncrement: true,
+},
+category_name: {
+	type: DataTypes.STRING,
+	allowNull: false,
+},
+```
+
+Then there are various routes for CRUD operations like Create, Read, Update, and Delete when handling the merchandise. For example, if the client wants to create a new tag for their products, they may use the `Tag` model and call the post route, which is written in `JS` with the following code snippet:
+
+```js
+// creates an async post route to await the create() method
+router.post('/', async (req, res) => {
+	// starts a try ... catch block
+	try {
+      // creates a variable to store the result of create() method
+		const tagData = await Tag.create(req.body);
+		res.status(200).json(tagData);
+	} catch (err) {
+      // responds with a status code 500 if there is an error
+		res.status(500).json(err);
+	}
+});
+```
+
+This summarizes the general functionality of this application, but there are some more details provided in the workflow video below. Any client would be able to use this enjoyable back-end and exciting application for their e-commerce needs. Looking forward to the next challenge. 🤓📝
 
 ## _Testing_
 
