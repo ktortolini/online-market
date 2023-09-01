@@ -1,6 +1,6 @@
 ![edX](https://img.shields.io/badge/edX-%2302262B.svg?style=for-the-badge&logo=edX&logoColor=white)
 
-[![GitHub](https://img.shields.io/github/license/ktortolini/online-market?style=flat-square)](#license)
+![GitHub](https://img.shields.io/github/license/ktortolini/online-market?style=flat-square)
 ![GitHub language count](https://img.shields.io/github/languages/count/ktortolini/online-market?style=flat-square)
 ![GitHub top language](https://img.shields.io/github/languages/top/ktortolini/online-market?color=green&style=flat-square)
 
