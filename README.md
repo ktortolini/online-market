@@ -4,14 +4,13 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/ktortolini/online-market?style=flat-square)
 ![GitHub top language](https://img.shields.io/github/languages/top/ktortolini/online-market?color=green&style=flat-square)
 
-# Employee Management System
+# Online Market
 
 ## _Description_
 
 This repository has a web application that uses
 [Node.js](https://nodejs.org/en) along with the `express` and `sequelize` packages in order to provide an e-commerce back-end for the client. It has multiple valid JS (ES6) files and SQL files; the `server.js` file contains the `sync()` method from sequelize for running the application, and the `schema.sql` file contains the setup for the SQL database.
 
-- [Node.js](https://www.w3schools.com/nodejs/nodejs_filesystem.asp) Native File System Module `fs`, used to work with the file system on a computer in order to read files, create files, update files, delete files, and rename files.
 - [Node.js](https://www.npmjs.com/package/sequelize) External Command Line Interface Module `sequelize`, used to connect to the database, close the connection, test if the connection works, all while logging to the console every SQL query it performs.
 
 
