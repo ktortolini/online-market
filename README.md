@@ -79,11 +79,11 @@ Then there are various routes for CRUD operations like Create, Read, Update, and
 router.post('/', async (req, res) => {
 	// starts a try ... catch block
 	try {
-      // creates a variable to store the result of create() method
+	// creates a variable to store the result of create() method
 		const tagData = await Tag.create(req.body);
 		res.status(200).json(tagData);
 	} catch (err) {
-      // responds with a status code 500 if there is an error
+	// responds with a status code 500 if there is an error
 		res.status(500).json(err);
 	}
 });
