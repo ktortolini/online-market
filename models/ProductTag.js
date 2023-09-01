@@ -1,19 +1,20 @@
-// import important parts of sequelize library
+// imports important parts of sequelize library
 const { Model, DataTypes } = require('sequelize');
-// import our database connection from config.js
+// imports our database connection from config.js
 const sequelize = require('../config/connection');
 
 class ProductTag extends Model {}
 
 ProductTag.init(
 	{
-		// todo: define columns
+		// creates the 'id' column
 		id: {
 			type: DataTypes.INTEGER,
 			allowNull: false,
 			primaryKey: true,
 			autoIncrement: true,
 		},
+		// creates the 'product_id' column
 		product_id: {
 			type: DataTypes.INTEGER,
 			references: {
@@ -21,6 +22,7 @@ ProductTag.init(
 				key: 'id',
 			},
 		},
+		// creates the 'tag_id' column
 		tag_id: {
 			type: DataTypes.INTEGER,
 			allowNull: false,
