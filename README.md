@@ -109,7 +109,7 @@ Lastly, parts of the `HTML`, `CSS`, and `JS` code were created with knowledge ga
 
 ## _Workflow Video_
 
-The workflow video is available on [YouTube](https://youtu.be/wi-FaM199IM).
+The workflow video is no longer available.
 
 ## _License_
 
@@ -118,3 +118,7 @@ Persistent Notes is licensed under an MIT License.
 ## _Questions_
 
 Contact the author [ktortolini](https://github.com/ktortolini) via email ✉ <a>ktortolini@smu.edu</a>.
+
+## _Archived_
+
+This repository is now archived with a grade of 100/100.
